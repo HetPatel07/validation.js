@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Start your project here-->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Default form register -->
+                    <form class="text-center border border-light p-5" id="myForm">
+
+                        <p class="h4 mb-4">Sign up</p>
+
+                        <div class="form-row mb-4">
+                            <div class="col">
+                                <!-- First name -->
+                                <input type="text" class="form-control" placeholder="First name" name="fname">
+                            </div>
+                            <div class="col">
+                                <!-- Last name -->
+                                <input type="text" class="form-control" placeholder="Last name" name="lname">
+                            </div>
+                        </div>
+
+                        <!-- E-mail -->
+                        <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail" name="mail">
+
+                        <!-- Password -->
+                        <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock" name="pass">
+                        <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                            
+                        </small>
+
+                        <!-- Phone number -->
+                        <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+                        <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+                            Optional - for two step authentication
+                        </small>
+
+                        <!-- Newsletter -->
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
+                            <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe to our newsletter</label>
+                        </div>
+
+                        <!-- Sign up button -->
+                        <button class="btn btn-info my-4 btn-block" type="submit">Sign in</button>
+
+                        <!-- Social register -->
+                        <p>or sign up with:</p>
+
+                        <a class="light-blue-text mx-2 btnMain">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+
+                        <a class="light-blue-text mx-2 btnMain">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+
+                        <a class="light-blue-text mx-2 btnMain">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                        <a class="light-blue-text mx-2 btnMain">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+
+                        <hr>
+
+                        <!-- Terms of service -->
+                        <p>By clicking
+                            <em>Sign up</em> you agree to our
+                            <a href="" target="_blank">terms of service</a>
+
+                    </form>
+                    <!-- Default form register -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $("#myForm").validate({
+                rules: {
+                    fname: {
+                        required: true,
+                        normalizer: function(value) {
+                            return $.trim(value);
+                        }
+                    },
+                    lname: {
+                        required: true,
+                        normalizer: function(value) {
+                            return $.trim(value);
+                        }
+                    },
+                    mail: {
+                        required: true,
+                        normalizer: function(value) {
+                            return $.trim(value);
+                        }
+                    },
+                    pass: {
+                        required: true,
+                        normalizer: function(value) {
+                            return $.trim(value);
+                        }
+                    },
+                }
+            });
+        });
+    </script>
+</body></html>
